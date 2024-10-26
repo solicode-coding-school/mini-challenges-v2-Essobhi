@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+ <div class="container">
+    <div class="progressBar">
+     <h4 class="questionText">Question <span class="numberOfQuestions">1/5</span></h4> 
+    <div class="bar">
+        <div class="progress"></div>
+    </div>  
+    
+    <div class="scorediv">
+        <h4 class="scoreText">Score</h4> 
+       <h5 class="score">0</h5> 
+       </div>
+    </div>
+ 
+
+  <h2 class="question">What is the answer for this questions?</h2>
+    <div class="choices">
+        <p class="choicePrefix">A</p>
+        <p class="choiceText">choice 1</p>
+    </div>
+    <div class="choices">
+        <p class="choicePrefix">B</p>
+        <p class="choiceText">choice 2</p>
+    </div>
+    <div class="choices">
+        <p class="choicePrefix">C</p>
+        <p class="choiceText">choice 3</p>
+    </div>
+    <div class="choices">
+        <p class="choicePrefix">D</p>
+        <p class="choiceText">choice 4</p>
+    </div>
+ </div>
+
+   <!-- Modal for showing the score -->
+   <div id="scoreModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="completed">Quiz Completed!</h2>
+        <p class="lastresults">Your Score is:<span id="finalScore"></span>/50</p>
+        <button id="restartQuiz">Start New Quiz</button>
+    </div>
+</div>
+ <script src="script.js"></script>
+</body> 
+</html>

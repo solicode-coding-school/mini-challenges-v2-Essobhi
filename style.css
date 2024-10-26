@@ -1,0 +1,157 @@
+body{
+background-color: rgb(249, 227, 227);
+height: 100vh;
+display: flex;
+justify-content:center ;
+    align-items: end;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+}
+
+h1{
+color: rgb(209, 125, 125);
+padding-bottom: 30px;
+}
+
+.choices{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.choicePrefix{
+    background-color: rgb(209, 125, 125);
+    padding: 16px;
+    color: white ;
+}
+
+.choiceText{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;  
+}
+h2{
+ margin-top: 70px;  
+ margin-bottom: 35px; 
+ font-size: 35px;
+}
+.choices:hover{
+    cursor: pointer;
+    transform: translateY(-0.1);
+    transition: transform 150ms;
+    box-shadow: 0 0.3rem 0.7rem 0 rgb(209, 125, 125);
+}
+
+
+.container{
+
+width: 66%;
+height: 90%;
+position: relative;
+}
+
+.progressBar{
+display: flex;
+justify-content: space-between;
+font-size: 20PX;
+}
+
+.bar{
+border: 3px solid black;
+padding: 5px;
+height: 35px;
+width: 160px;
+position: absolute;
+top: 30px;
+border-color: rgb(209, 125, 125);
+}
+
+.questionText{
+margin-left:17px;
+font-size: 20px;
+}
+.score{
+    color: rgb(209, 125, 125);
+   font-size: 70px;
+   margin-left: 12px;
+}
+
+.scoreText{
+    font-size: 20px;
+    }
+    .progress {
+        height: 100%; 
+        width: 0%; 
+        background-color: rgb(209, 125, 125); 
+        transition: width 0.5s ease-in-out;
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4);
+        
+    }
+    
+    .modal-content {
+        background-color: rgb(249, 227, 227);
+        margin: 7% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%; /* Could be more or less, depending on screen size */
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+.completed{
+margin-bottom: 150px;
+color:rgba(14, 13, 13, 0.95);
+}
+
+#restartQuiz{
+    background-color:rgb(209, 125, 125) ;
+    padding: 8px;
+    border-color: rgb(209, 125, 125) ;
+    border-radius: 3px;
+    margin-bottom: 70px;
+}
+
+.lastresults{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.correct {
+    background-color: rgb(147, 231, 147); 
+    color: white;
+}
+
+.incorrect {
+    background-color: rgb(231, 129, 129); 
+    color: white;
+}
